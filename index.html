@@ -1,133 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Lecturer</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-            color: #222;
-        }
-
-        header {
-            background: #17365d;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        header p {
-            font-size: 20px;
-        }
-
-        nav {
-            background: white;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #17365d;
-            font-weight: bold;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        section {
-            background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #17365d;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #666;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic website of Dr Asad Hussain, Lecturer in Computer Science at the University of Reading.">
+  <title>Dr Asad Hussain | Computer Science</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">Asad Hussain<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a><a href="#publications">Publications</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<header>
-    <h1>Your Name</h1>
-    <p>Lecturer in Your Subject</p>
-    <p>Your University</p>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<main>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my academic website. I am a lecturer in
-            [Your Subject] at [Your University].
-        </p>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">LECTURER · COMPUTER SCIENCE · UNIVERSITY OF READING</p>
+        <h1>Dr Asad Hussain</h1>
+        <p class="hero-lead">Researcher and academic working across artificial intelligence, data science, distributed edge intelligence and the Internet of Things.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#research">Explore my research</a>
+          <a class="button button-outline" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-meta">
+          <span>Department of Computer Science</span><span>Reading, United Kingdom</span>
+        </div>
+      </div>
     </section>
 
-    <section id="research">
-        <h2>Research</h2>
-        <p>
-            My research interests include [Research Area 1],
-            [Research Area 2], and [Research Area 3].
-        </p>
+    <section class="section wrap" id="about">
+      <div class="section-heading"><p class="eyebrow">PROFILE</p><h2>About me</h2></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a Lecturer in the Department of Computer Science at the University of Reading, UK. My research focuses on distributed edge intelligence for IoT and data-driven systems, as well as energy-efficient and optimised computing in distributed environments.</p>
+          <p>My work contributes to next-generation intelligent systems and TinyML, with an emphasis on scalable, efficient, data-centric and agentic architectures. I bring over a decade of experience across academia and industry in Pakistan, Italy and the United Kingdom, contributing to research projects, curriculum development, module delivery and undergraduate and postgraduate dissertation supervision.</p>
+          <p>I have authored more than 15 peer-reviewed publications in international journals and conferences. I also serve on technical programme committees, review for international journals and contribute to the AI-INTERVENE doctoral training programme.</p>
+        </div>
+        <aside class="profile-card">
+          <p class="card-label">CURRENT POSITION</p><h3>Lecturer</h3>
+          <p>Department of Computer Science<br>University of Reading<br>United Kingdom</p>
+          <hr>
+          <p class="card-label">ACADEMIC PROFILE</p>
+          <p><strong>PhD</strong><br>Computer and Information Engineering<br>University of Bergamo, Italy</p>
+          <a class="text-link" href="https://scholar.google.com/citations?user=qME-nj8AAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+          <a class="text-link" href="https://orcid.org/0000-0002-5167-4553" target="_blank" rel="noopener">ORCID ↗</a>
+        </aside>
+      </div>
     </section>
 
-    <section id="teaching">
-        <h2>Teaching</h2>
-        <p>
-            I teach courses in [Your Subject / Modules].
-        </p>
+    <section class="section section-tint" id="research">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">RESEARCH</p><h2>Research interests</h2><p class="section-intro">My work explores intelligent, connected and resource-aware computing systems.</p></div>
+        <div class="interest-grid">
+          <article class="interest-card"><span>01</span><h3>Artificial Intelligence</h3><p>Machine learning, deep learning and agentic AI.</p></article>
+          <article class="interest-card"><span>02</span><h3>Edge Intelligence & IoT</h3><p>Distributed intelligence, Internet of Things and smart-city applications.</p></article>
+          <article class="interest-card"><span>03</span><h3>Efficient Computing</h3><p>TinyML, energy-efficient systems and optimised distributed computing.</p></article>
+          <article class="interest-card"><span>04</span><h3>Data & Signal Analysis</h3><p>Data science, time-series analysis, communication and signal processing.</p></article>
+        </div>
+      </div>
     </section>
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <p>
-            My publications and research work will be listed here.
-        </p>
+    <section class="section wrap" id="projects">
+      <div class="section-heading"><p class="eyebrow">RESEARCH ACTIVITY</p><h2>Projects & research funding</h2></div>
+      <div class="timeline">
+        <article class="timeline-item"><p class="timeline-date">Co-Principal Investigator</p><h3>UpQComing — Quantum Computing Research Project</h3><p>Co-funded by the European Commission (EC) and UK Research and Innovation (UKRI).</p></article>
+        <article class="timeline-item"><p class="timeline-date">Co-Principal Investigator</p><h3>Smart Energy Management System for ENEA</h3><p>Funded by ENEA, the Italian National Agency for New Technologies, Energy and Sustainable Economic Development.</p></article>
+        <article class="timeline-item"><p class="timeline-date">Postdoctoral research</p><h3>SAT Solvers</h3><p>EPSRC project at Swansea University, UK; project funding stated in the CV as £800k.</p></article>
+        <article class="timeline-item"><p class="timeline-date">Co-Principal Investigator</p><h3>Smart Billing System for WASA using NFC Technology</h3><p>Funded by the Water and Sanitation Agency, Pakistan.</p></article>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>
-            Email: your.email@university.ac.uk
-        </p>
+    <section class="section section-tint" id="experience">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">CAREER</p><h2>Academic experience</h2></div>
+        <div class="experience-grid">
+          <article><p class="timeline-date">July 2024 – Present</p><h3>Lecturer</h3><p>Department of Computer Science, University of Reading, UK.</p></article>
+          <article><p class="timeline-date">May 2023 – June 2024</p><h3>Postdoctoral Researcher</h3><p>School of Computer Science, Swansea University, UK.</p></article>
+          <article><p class="timeline-date">October 2022 – April 2023</p><h3>Postdoctoral Researcher</h3><p>Department of Computer Science and Electronics Engineering, University of Bergamo, Italy.</p></article>
+          <article><p class="timeline-date">August 2008 – September 2019</p><h3>Lecturer</h3><p>Faculty of Engineering and Computer Science, National University of Modern Languages, Islamabad, Pakistan.</p></article>
+        </div>
+      </div>
     </section>
 
-</main>
+    <section class="section wrap" id="teaching">
+      <div class="section-heading"><p class="eyebrow">EDUCATION</p><h2>Teaching & student supervision</h2></div>
+      <div class="two-col">
+        <div>
+          <h3 class="subheading">Selected teaching</h3>
+          <ul class="clean-list">
+            <li><strong>Operating Systems & Computer Network</strong><span>Module Leader · Level 5 · University of Reading · 2026</span></li>
+            <li><strong>Artificial Intelligence and Machine Learning</strong><span>Module Leader · Level 6 · University of Reading · 2026</span></li>
+            <li><strong>Problem Solving with Python</strong><span>Module Leader · Level 7 · University of Reading · 2025</span></li>
+            <li><strong>Fundamentals of AI</strong><span>Module Leader · Level 7 · University of Reading · 2025</span></li>
+            <li><strong>Blockchain and Security</strong><span>Level 6 · University of Reading · 2024</span></li>
+            <li><strong>Computer Systems Architecture</strong><span>Lab Instructor · Level 4 · University of Reading · 2024</span></li>
+            <li><strong>Discrete Mathematics; Programming Fundamentals; Linear Algebra</strong><span>Module Leader · NUML, Islamabad · 2016–2018</span></li>
+          </ul>
+        </div>
+        <div class="stats-panel">
+          <h3 class="subheading">Supervision & student support</h3>
+          <div class="stat"><strong>100+</strong><span>Undergraduate project supervisions</span></div>
+          <div class="stat"><strong>50+</strong><span>Master’s dissertation supervisions</span></div>
+          <div class="stat"><strong>2</strong><span>PhD examinations</span></div>
+          <p class="small-note">The CV also records personal tutoring for more than 100 students at the University of Reading.</p>
+        </div>
+      </div>
+    </section>
 
-<footer>
-    © 2026 Your Name
-</footer>
+    <section class="section section-tint" id="education">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">ACADEMIC BACKGROUND</p><h2>Education</h2></div>
+        <div class="education-list">
+          <article><p class="timeline-date">2019 – 2022</p><div><h3>PhD in Computer and Information Engineering</h3><p>University of Bergamo, Italy. Dissertation: “Sensor-based systems, data acquisition, analysis, and prediction algorithms for the energy data of smart homes.”</p></div></article>
+          <article><p class="timeline-date">2013 – 2016</p><div><h3>MSc in Computer Engineering</h3><p>Isra University, Islamabad, Pakistan. Thesis: “Automatic Modulation Classification Using Genetic Programming.”</p></div></article>
+          <article><p class="timeline-date">2006 – 2008</p><div><h3>MSc in Electronics</h3><p>Quaid-e-Azam University, Islamabad, Pakistan.</p></div></article>
+          <article><p class="timeline-date">2004 – 2006</p><div><h3>BSc in Mathematics and Physics</h3><p>Punjab University, Lahore, Pakistan.</p></div></article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section wrap" id="publications">
+      <div class="section-heading"><p class="eyebrow">SELECTED SCHOLARLY WORK</p><h2>Publications</h2><p class="section-intro">Selected journal articles and conference/book-chapter work listed in my CV. For the wider publication record, please visit Google Scholar.</p></div>
+      <div class="publication-list">
+        <article><p class="pub-type">Journal · 2023</p><h3>Energy Consumption Patterns Detecting Technique for Household Appliances for Smart Homes Platform</h3><p>M. Caldera, A. Hussain, S. Romano, and V. Re · <em>Energies</em>, 16(2), 824.</p></article>
+        <article><p class="pub-type">Journal · 2023</p><h3>Deep Learning Based Anomaly Detection for Fog-Assisted IoVs Network</h3><p>Y. Shumayla, A. Hussain, F. Subhan, G. Pappalardo, and M. Awais · <em>IEEE Access</em>, pp. 19024–19038.</p></article>
+        <article><p class="pub-type">Journal · 2022</p><h3>Automatic Modulation Recognition Based on Optimized Linear Combination of Higher Order Cumulants</h3><p>A. Hussain et al. · <em>Sensors</em>, 22(19), 7488.</p></article>
+        <article><p class="pub-type">Journal · 2022</p><h3>Machine learning based psychotic behaviors prediction from Facebook status updates</h3><p>M. Ali, A. Baqir, H. H. R. Sherazi, A. Hussain et al. · <em>Computers, Materials and Continua</em>, 72(2), 2411–2427.</p></article>
+        <article><p class="pub-type">Journal · 2022</p><h3>A Cumulants-Based Human Brain Decoding</h3><p>R. Zafar, M. J. Rehman, S. Alam, M. A. Khan, A. Hussain et al. · <em>Computational Intelligence and Neuroscience</em>.</p></article>
+        <article><p class="pub-type">Journal · 2019</p><h3>A novel hybrid cuckoo search-extreme learning machine approach for modulation classification</h3><p>S. I. H. Shah, S. Alam, S. A. Ghauri, A. Hussain, and F. A. Ansari · <em>IEEE Access</em>, pp. 90525–90537.</p></article>
+        <article><p class="pub-type">Journal · 2018</p><h3>Classification of M-QAM and M-PSK signals using genetic programming (GP)</h3><p>A. Hussain et al. · <em>Neural Computing & Applications</em>, 31(10), 6141–6149.</p></article>
+        <article><p class="pub-type">Journal · 2017</p><h3>Multiuser detection: Comparative analysis of heuristic approach</h3><p>M. F. Sohail, S. Alam, A. Hussain et al. · <em>International Journal of Advanced and Applied Sciences</em>, 4(6), 115–120.</p></article>
+        <article><p class="pub-type">Journal · 2016</p><h3>KNN based Classification of Digital Modulated Signals</h3><p>A. Hussain et al. · <em>IIUM Engineering Journal</em>, 17(2), 71–82.</p></article>
+        <article><p class="pub-type">Journal · 2016</p><h3>Channel estimation using evolutionary computing techniques</h3><p>S. A. Khan, M. F. Sohail, A. Hussain et al. · <em>International Journal of Technology and Research</em>, 4(1), 16–20.</p></article>
+        <article><p class="pub-type">Conference · 2022</p><h3>Data Driven Disaggregation Method for Electricity Based Energy Consumption for Smart Homes</h3><p>A. Hussain, J. Cimaglia, S. Romano, F. Mancini, and V. Re · <em>Journal of Physics: Conference Series</em>, 2385(1), 012006.</p></article>
+        <article><p class="pub-type">Book chapter · 2020</p><h3>Winter: A Novel Low Power Modular Platform for Wearable and IoT Applications</h3><p>P. Locatelli, A. Hussain, A. Pedrana et al. · Springer, Cham, pp. 62–68.</p></article>
+      </div>
+      <p class="center"><a class="button button-dark" href="https://scholar.google.com/citations?user=qME-nj8AAAAJ" target="_blank" rel="noopener">View full publication list on Google Scholar ↗</a></p>
+    </section>
+
+    <section class="section section-tint" id="service">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">ACADEMIC CONTRIBUTIONS</p><h2>Leadership, service & recognition</h2></div>
+        <div class="service-grid">
+          <article><h3>Leadership & management</h3><p>Leadership Team member of the NERC DFA AI-INTERVENE programme, with responsibility for overseeing PhD student recruitment. Previous roles include Programme Coordinator and Director of Student Outreach at NUML, Islamabad.</p></article>
+          <article><h3>Academic service</h3><p>Technical Programme Committee member for FedCSIS and reviewer for international journals, including IEEE Internet of Things Journal, IEEE Transactions on Industrial Informatics, IEEE Transactions on Big Data, IEEE Access and other journals listed in my CV.</p></article>
+          <article><h3>Awards & recognition</h3><p>Global Talent Visa endorsed by the Royal Academy of Engineering and UKVI; Best PhD Poster Award at the 2021 IoT Summer School in Pisa; and Outstanding Contributions in Reviewing awards from Internet Technology Letters and Applied Sciences (MDPI).</p></article>
+          <article><h3>Professional memberships</h3><p>IEEE, ACM, IEEE Young Professionals, IEEE Communications Society and the Institution of Engineering and Technology (IET).</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="wrap contact-inner">
+        <p class="eyebrow">CONTACT</p><h2>Get in touch</h2>
+        <p>For academic enquiries, research collaboration or questions about teaching, please contact me by email.</p>
+        <a class="button button-light" href="mailto:asad.hussain@reading.ac.uk">asad.hussain@reading.ac.uk</a>
+        <div class="contact-links"><a href="https://orcid.org/0000-0002-5167-4553" target="_blank" rel="noopener">ORCID</a><a href="https://scholar.google.com/citations?user=qME-nj8AAAAJ" target="_blank" rel="noopener">Google Scholar</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><span>© <span id="year">2026</span> Dr Asad Hussain</span><span>Lecturer in Computer Science · University of Reading</span></div></footer>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
